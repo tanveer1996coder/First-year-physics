@@ -13,7 +13,7 @@ function App() {
     const [darkMode, setDarkMode] = useState(true);
 
     return (
-        <Router>
+        <Router basename={import.meta.env.BASE_URL}>
             <div className={`app ${darkMode ? 'dark' : 'light'}`}>
                 <Sidebar darkMode={darkMode} setDarkMode={setDarkMode} />
                 <main className="main-content">

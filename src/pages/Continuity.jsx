@@ -185,10 +185,27 @@ const Continuity = () => {
                         </div>
 
                         <div className="card highlight-card">
-                            <h3>💧 Equation of Continuity</h3>
-                            <p className="key-concept">{topic.content.derivation}</p>
+                            <h3>💧 Equation of Continuity Derivation</h3>
+                            <p>{topic.content.derivation.description}</p>
+
+                            <div className="derivation-steps">
+                                <div className="step">
+                                    <p><strong>Step 1:</strong> {topic.content.derivation.step1}</p>
+                                </div>
+                                <div className="step">
+                                    <p><strong>Step 2:</strong> {topic.content.derivation.step2}</p>
+                                    <div className="formula-box">{topic.content.derivation.step3}</div>
+                                </div>
+                                <div className="step">
+                                    <p>{topic.content.derivation.conservation}</p>
+                                    <div className="formula-box">{topic.content.derivation.equation1}</div>
+                                    <div className="formula-box">{topic.content.derivation.equation2}</div>
+                                </div>
+                            </div>
+
+                            <p className="key-concept">{topic.content.derivation.finalForm}</p>
                             <div className="formula-card">
-                                <div className="formula-large">{topic.content.equation}</div>
+                                <div className="formula-large">{topic.content.derivation.continuityEquation}</div>
                             </div>
                         </div>
 
